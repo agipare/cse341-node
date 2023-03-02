@@ -1,0 +1,31 @@
+{
+    "contact1": {
+      "firstName": "Ama",
+      "lastName": "Amoa-ohenakwa",
+      "email": "agipare5909@gmail.com",
+      "favoriteColor": "Green",
+      "birthday": "12/02/1987"
+    },
+    "contact2": {
+      "firstName": "Asambo",
+      "lastName": "Isaac",
+      "email": "asamboisaac7@gmail.com",
+      "favoriteColor": "white",
+      "birthday": "15/11/1996"
+    },
+    "contact3": {
+      "firstName": "Atindaana",
+      "lastName": "Bismark",
+      "email": "aatindaanabismark@gmail.com",
+      "favoriteColor": "Black",
+      "birthday": "07/09/1995"
+    },
+    "contact4": {
+        "firstName": "Adongyine",
+        "lastName": "Ayinebono",
+        "email": "adongyinejennifer@gmail.com",
+        "favoriteColor": "Black",
+        "birthday": "09/01/2002"
+      }
+  }
+  
