@@ -1,8 +1,4 @@
-GET http://localhost:3000/ HTTP/1.1
+GET http://localhost:300/ HTTP/1.1
 
-###
-GET https://cse341-nodejs.onrender.com HTTP/1.1
-###
-GET http://localhost:3000/ HTTP/1.1
 ###
 GET https://cse341-nodejs.onrender.com HTTP/1.1

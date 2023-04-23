@@ -1,5 +1,5 @@
-function name (req,res,next){
+const person = (req,res,next)=>{
   res.json('Asambo Isaac Asibi');
 };
 
-module.exports = name;
+module.exports = {person};
