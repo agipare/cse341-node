@@ -3,7 +3,7 @@ const ObjectId = require('mongodb').ObjectId;
 require('mongoose');
 
 const getAll = async (req, res, next) => {
-  const result = await mongodb.getDb().db().collection('WebDevII.conatcts').find();
+  const result = await mongodb.getDb().db("WebDevII").collection('conatcts').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists);
@@ -14,7 +14,7 @@ const getSingle = async (req, res, next) => {
   const userId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
-    .db()
+    .db("WebDevII")
     .collection('conatcts')
     .find({ _id: userId });
   result.toArray().then((lists) => {
