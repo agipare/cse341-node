@@ -17,6 +17,16 @@ DELETE http://localhost:8080/contacts/63fff2abdd32774d946ae8d3 HTTP/1.1
 
 
 ###### deployment to render
+
 GET https://cse341-nodejs.onrender.com/contacts HTTP/1.1
 ###
 GET https://cse341-nodejs.onrender.com/contacts/63fff2abdd32774d946ae8d1 HTTP/1.1
+
+###
+POST https://cse341-nodejs.onrender.com/contacts HTTP/1.1 content-type: application/json{"firstName":"Peter", "lastName":"Agoswin", "email":"agoswinpeter@gmail.com", "favoriteColor":"Brown","birthday":"07/10/2001"}
+
+###
+PUT https://cse341-nodejs.onrender.com/contacts/645ad9ce7e8590e958dff1ed HTTP/1.1 content-type: application/json{"firstName":"Daniel", "lastName":"Abaare", "email":"danielabaare@gmail.com", "favoriteColor":"Black", "birthday":"07/04/2001"} 
+
+###
+DELETE https://cse341-nodejs.onrender.com/contacts/645ad9ce7e8590e958dff1ed HTTP/1.1
