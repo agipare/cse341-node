@@ -10,9 +10,9 @@ GET http://localhost:8080/contacts/63fff2abdd32774d946ae8d2 HTTP/1.1
 POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json{"firstName":"Peter", "lastName":"Agoswin", "email":"agoswinpeter@gmail.com", "favoriteColor":"Brown","birthday":"07/10/2001"}
 
 ### PUT contact 
-PUT http://localhost:8080/contacts/645ad9ce7e8590e958dff1ed HTTP/1.1 content-type: application/json{"firstName":"Daniel", "lastName":"Abaare", "email":"danielabaare@gmail.com", "favoriteColor":"Black", "birthday":"07/04/2001"} 
+PUT http://localhost:8080/contacts/63fff2abdd32774d946ae8d0 HTTP/1.1 content-type: application/json{"firstName":"Daniel", "lastName":"Abaare", "email":"danielabaare@gmail.com", "favoriteColor":"Black", "birthday":"07/04/2001"} 
 ### DELETE contact 
-DELETE http://localhost:8080/contacts/63fff2abdd32774d946ae8d3 HTTP/1.1
+DELETE http://localhost:8080/contacts/63fff2abdd32774d946ae8d0 HTTP/1.1
 
 
 
