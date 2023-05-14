@@ -31,7 +31,7 @@ const createContact = async (req, res) => {
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday
   };
-  const response = await mongodb.getDb().db('WebDevII').collection('contatcs').insertOne(contact);
+  const response = await mongodb.getDb().db('WebDevII').collection('conatcts').insertOne(contact);
   if (response.acknowledged) {
     res.status(201).json(response);
   } else {
@@ -52,7 +52,7 @@ const updateContact = async (req, res) => {
   const response = await mongodb
     .getDb()
     .db('WebDevII')
-    .collection('contatcs')
+    .collection('conatcts')
     .replaceOne({ _id: userId }, contact);
   console.log(response);
   if (response.modifiedCount > 0) {
@@ -65,7 +65,7 @@ const updateContact = async (req, res) => {
 const deleteContact = async (req, res) => {
   try {
     const userId = new ObjectId(req.params.id);
-    const collection = mongodb.getDb().db("WebDevII").collection('contatcs');
+    const collection = mongodb.getDb().db("WebDevII").collection('conatcts');
     const response = await collection.deleteOne({ _id: userId });
 
     console.log(response);
