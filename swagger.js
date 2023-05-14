@@ -2,10 +2,10 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
   info: {
-    title: 'My API',
-    description: 'Temple API'
+    title: 'My contacts API',
+    description: 'Contacts Api'
   },
-  host: 'cse341-instructor.herokuapp.com',
+  host: 'https://cse341-nodejs.onrender.com',
   schemes: ['https']
 };
 
@@ -16,6 +16,6 @@ const endpointsFiles = ['./routes/index.js'];
 swaggerAutogen(outputFile, endpointsFiles, doc);
 
 // Run server after it gets generated
-// swaggerAutogen(outputFile, endpointsFiles, doc).then(async () => {
-//   await import('./index.js');
-// });
+ swaggerAutogen(outputFile, endpointsFiles, doc).then(async () => {
+   await import('./index.js');
+ });
